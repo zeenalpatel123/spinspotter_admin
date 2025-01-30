@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@tailwind base;
+*{@apply font-kumbh;}
+.anim{@apply duration-300 transition-all;}
+body{@apply bg-l4;}
+.text16{@apply text-12 md:text-14 2xl:text-16;}
+.text24{@apply text-18 md:text-20 2xl:text-24;}
+.text36{@apply text-24 md:text-30 2xl:text-36;}
+/* navbar css start */
+.nav_item{@apply relative py-1.5 pr-7 flex items-center space-x-3.5;}
+.nav_link{@apply inline-block text-secondary group-hover:text-primary text-14 md:text-16 font-medium group-hover:font-bold anim;}
+.nav_icon{@apply fill-secondary group-hover:fill-primary anim;}
+.nav_hover{@apply absolute w-1 h-0 group-hover:h-full bg-primary anim rounded-xl right-0 top-0;}
+/* navbar css end  */
+/* input and label css start */
+.label{@apply block text-d2 font-semibold text-14 mb-1;}
+.inpu{@apply w-full px-3 2xl:px-5 py-2.5 2xl:py-3.5 outline-none placeholder:text-secondary font-normal text-dark text-12 md:text-14 xl:text-16 bg-white border border-l1 rounded-lg lg:rounded-2xl;}
+/* input and label css end  */
+
+@tailwind components;
+@tailwind utilities;
+
