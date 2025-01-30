@@ -11,6 +11,8 @@ body{@apply bg-l4;}
 .nav_link{@apply inline-block text-secondary group-hover:text-primary text-14 md:text-16 font-medium group-hover:font-bold anim;}
 .nav_icon{@apply fill-secondary group-hover:fill-primary anim;}
 .nav_hover{@apply absolute w-1 h-0 group-hover:h-full bg-primary anim rounded-xl right-0 top-0;}
+
+.title_tab.active .icon-down{@apply rotate-180;}
 /* navbar css end  */
 /* input and label css start */
 .label{@apply block text-d2 font-semibold text-14 mb-1;}
