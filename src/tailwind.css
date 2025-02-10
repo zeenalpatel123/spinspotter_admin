@@ -67,30 +67,30 @@ table tbody tr:hover td .tactive, table tbody tr:hover td .tinactive, table tbod
     bottom: 0;
     left: 0;
     transition: 0.3s all;
-  }
-  .tab_hover .tab_slot.active::after, .tab_slot:hover::after{
-    width: 100%;
-    height: 2px;
-  }
-  .tab_hover .tab_slot li a.active{
-    color: #468F73;
-  }
-  .tab_hover li a::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    background: #468F73;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s all;
-  }
-  .tab_hover li a.active::after, .tab_hover li a:hover::after{
-    width: 100%;
-  }
-  .tab_hover .tab_slot li a.active{
-    color: #468F73;
-  }
+}
+.tab_hover .tab_slot.active::after, .tab_slot:hover::after{
+  width: 100%;
+  height: 2px;
+}
+.tab_hover .tab_slot li a.active{
+  color: #468F73;
+}
+.tab_hover li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #468F73;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s all;
+}
+.tab_hover li a.active::after, .tab_hover li a:hover::after{
+  width: 100%;
+}
+.tab_hover .tab_slot li a.active{
+  color: #468F73;
+}
 /* popup tabs css end */
 
 @tailwind components;
