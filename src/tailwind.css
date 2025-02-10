@@ -33,11 +33,31 @@ input:checked + .radio span{@apply opacity-100;}
 .select{@apply cursor-pointer w-full text-center px-1.5 py-2 2xl:py-3 bg-white rounded-lg lg:rounded-xl 2xl:rounded-2xl inline-block border border-l1;}
 input:checked + .select{@apply bg-primary border border-l1 anim;}
 input:checked + .select span{@apply text-white anim;}
-
-
 /* select days css end  */
+/* table css start  */
+table tr th{@apply px-3.5 py-2.5 xl:py-3;}
+table tr td, table tr th{@apply px-3.5 py-3.5 xl:py-3.5 text16 font-medium border-y border-l3 text-secondary whitespace-nowrap;}
+table tr td{@apply text-dark;}
+.tactive{@apply px-4 2xl:px-5 py-1.5 rounded-md text-primary bg-primary/10 whitespace-nowrap;}
+.tinactive{@apply px-4 2xl:px-5 py-1.5 rounded-md text-error bg-error/10 whitespace-nowrap;}
+.tustatus{@apply px-4 2xl:px-5 py-1.5 rounded-md text-[#FF8743] bg-[#FF8743]/10 whitespace-nowrap;}
+table tbody tr:hover{@apply bg-l6 anim;}
+table tbody tr:hover td .tactive, table tbody tr:hover td .tinactive, table tbody tr:hover td .tustatus{@apply bg-white;}
+/* table css end  */
+/* switch toggle css start  */
+.toggle_swich input{@apply absolute inset-0 w-full h-full opacity-0 z-10 cursor-pointer;}
+.toggle_swich .swich_bac{@apply relative w-[44px] h-6 p-[3px] bg-secondary rounded-full;}
+.toggle_swich .swich_bac span{@apply absolute top-1/2 -translate-y-1/2 left-[3px] w-[18px] h-[18px] rounded-full bg-white inline-block;}
+.toggle_swich input:checked + .swich_bac{@apply bg-primary;}
+.toggle_swich input:checked + .swich_bac span{@apply left-auto right-[3px];}
+/* switch toggle css end  */
+/* approve & reject btn css start */
+.approve_btn{@apply py-1.5 px-2.5 xl:px-4 bg-primary rounded-lg text16 text-white font-semibold border border-primary hover:text-primary hover:bg-transparent anim;}
+.reject_btn{@apply py-1.5 px-2.5 xl:px-4 bg-error rounded-lg text16 text-white font-semibold border border-error hover:text-error hover:bg-transparent anim;}
+/* approve & reject btn css end */
+/* search css start  */
 .search{@apply w-full outline-none placeholder:text-secondary bg-transparent text-dark text-12 md:text-14 2xl:text-16 pl-2.5;}
-
+/* search css end  */
 /* popup tabs css start  */
 .tab_hover .tab_slot::after {
     content: "";
@@ -47,7 +67,6 @@ input:checked + .select span{@apply text-white anim;}
     bottom: 0;
     left: 0;
     transition: 0.3s all;
-
   }
   .tab_hover .tab_slot.active::after, .tab_slot:hover::after{
     width: 100%;

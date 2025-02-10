@@ -1050,6 +1050,266 @@ input:checked + .select span{
 
 /* select days css end  */
 
+/* table css start  */
+
+table tr th{
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+@media (min-width: 1280px){
+  table tr th{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+table tr td, table tr th{
+  white-space: nowrap;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 240 246 / var(--tw-border-opacity, 1));
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(160 163 189 / var(--tw-text-opacity, 1));
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (min-width: 1536px){
+  table tr td, table tr th{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1280px){
+  table tr td, table tr th{
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+}
+
+table tr td{
+  --tw-text-opacity: 1;
+  color: rgb(20 20 42 / var(--tw-text-opacity, 1));
+}
+
+.tactive{
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  background-color: rgb(70 143 115 / 0.1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  --tw-text-opacity: 1;
+  color: rgb(70 143 115 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1536px){
+  .tactive{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.tinactive{
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  background-color: rgb(216 0 50 / 0.1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  --tw-text-opacity: 1;
+  color: rgb(216 0 50 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1536px){
+  .tinactive{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.tustatus{
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  background-color: rgb(255 135 67 / 0.1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 135 67 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1536px){
+  .tustatus{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+table tbody tr:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 242 234 / var(--tw-bg-opacity, 1));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+table tbody tr:hover td .tactive, table tbody tr:hover td .tinactive, table tbody tr:hover td .tustatus{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+/* table css end  */
+
+/* switch toggle css start  */
+
+.toggle_swich input{
+  position: absolute;
+  inset: 0px;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.toggle_swich .swich_bac{
+  position: relative;
+  height: 1.5rem;
+  width: 44px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(160 163 189 / var(--tw-bg-opacity, 1));
+  padding: 3px;
+}
+
+.toggle_swich .swich_bac span{
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.toggle_swich input:checked + .swich_bac{
+  --tw-bg-opacity: 1;
+  background-color: rgb(70 143 115 / var(--tw-bg-opacity, 1));
+}
+
+.toggle_swich input:checked + .swich_bac span{
+  left: auto;
+  right: 3px;
+}
+
+/* switch toggle css end  */
+
+/* approve & reject btn css start */
+
+.approve_btn{
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(70 143 115 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(70 143 115 / var(--tw-bg-opacity, 1));
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (min-width: 1536px){
+  .approve_btn{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.approve_btn:hover{
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(70 143 115 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1280px){
+  .approve_btn{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.reject_btn{
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(216 0 50 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 0 50 / var(--tw-bg-opacity, 1));
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (min-width: 1536px){
+  .reject_btn{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.reject_btn:hover{
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(216 0 50 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1280px){
+  .reject_btn{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* approve & reject btn css end */
+
+/* search css start  */
+
 .search{
   width: 100%;
   background-color: transparent;
@@ -1085,6 +1345,8 @@ input:checked + .select span{
     line-height: 20px;
   }
 }
+
+/* search css end  */
 
 /* popup tabs css start  */
 
@@ -1347,6 +1609,10 @@ input:checked + .select span{
   height: 1.75rem;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .h-9{
   height: 2.25rem;
 }
@@ -1403,6 +1669,10 @@ input:checked + .select span{
   width: 2.25rem;
 }
 
+.w-\[108px\]{
+  width: 108px;
+}
+
 .w-\[calc\(100\%\/7\)\]{
   width: calc(100% / 7);
 }
@@ -1418,6 +1688,11 @@ input:checked + .select span{
 .w-max{
   width: -moz-max-content;
   width: max-content;
+}
+
+.min-w-max{
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 .max-w-20{
@@ -1440,8 +1715,16 @@ input:checked + .select span{
   max-width: 1500px;
 }
 
+.max-w-\[150px\]{
+  max-width: 150px;
+}
+
 .max-w-\[166px\]{
   max-width: 166px;
+}
+
+.max-w-\[180px\]{
+  max-width: 180px;
 }
 
 .max-w-\[190px\]{
@@ -1472,12 +1755,8 @@ input:checked + .select span{
   max-width: 32rem;
 }
 
-.max-w-\[180px\]{
-  max-width: 180px;
-}
-
-.max-w-\[150px\]{
-  max-width: 150px;
+.table-auto{
+  table-layout: auto;
 }
 
 .-translate-x-1\/2{
@@ -1670,6 +1949,11 @@ input:checked + .select span{
   border-width: 1px;
 }
 
+.border-y{
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -1694,6 +1978,12 @@ input:checked + .select span{
 .border-l3{
   --tw-border-opacity: 1;
   border-color: rgb(239 240 246 / var(--tw-border-opacity, 1));
+}
+
+.border-y-l3{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(239 240 246 / var(--tw-border-opacity, 1));
+  border-bottom-color: rgb(239 240 246 / var(--tw-border-opacity, 1));
 }
 
 .bg-dark\/30{
@@ -1732,6 +2022,10 @@ input:checked + .select span{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-clip-border{
+  background-clip: border-box;
 }
 
 .object-cover{
@@ -1912,6 +2206,10 @@ input:checked + .select span{
   padding-top: 1rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1955,6 +2253,10 @@ input:checked + .select span{
   line-height: 30px;
 }
 
+.text-\[12px\]{
+  font-size: 12px;
+}
+
 .text-\[14px\]{
   font-size: 14px;
 }
@@ -1967,21 +2269,12 @@ input:checked + .select span{
   font-size: 18px;
 }
 
-<<<<<<< HEAD
 .text-\[20px\]{
   font-size: 20px;
 }
 
-.text-\[12px\]{
-  font-size: 12px;
-}
-
-.text-\[14px\]{
-  font-size: 14px;
-=======
 .text-\[24px\]{
   font-size: 24px;
->>>>>>> 97e95467650853dd81a29265aef21a92a38b8419
 }
 
 .font-bold{
@@ -2057,6 +2350,11 @@ input:checked + .select span{
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
 .text-primary{
   --tw-text-opacity: 1;
   color: rgb(70 143 115 / var(--tw-text-opacity, 1));
@@ -2126,6 +2424,11 @@ input:checked + .select span{
 
 .group:hover .group-hover\:hidden{
   display: none;
+}
+
+.group:hover .group-hover\:bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .group:hover .group-hover\:text-error{
@@ -2310,6 +2613,12 @@ input:checked + .select span{
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
   .md\:space-y-5 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2355,16 +2664,16 @@ input:checked + .select span{
     line-height: 26px;
   }
 
+  .md\:text-\[18px\]{
+    font-size: 18px;
+  }
+
   .md\:text-\[20px\]{
     font-size: 20px;
   }
 
   .md\:text-\[24px\]{
     font-size: 24px;
-  }
-
-  .md\:text-\[18px\]{
-    font-size: 18px;
   }
 }
 
@@ -2601,37 +2910,24 @@ input:checked + .select span{
     line-height: 28px;
   }
 
-  .lg\:text-26{
-    font-size: 26px;
-    line-height: 34px;
+  .lg\:text-\[16px\]{
+    font-size: 16px;
   }
 
-<<<<<<< HEAD
   .lg\:text-\[18px\]{
     font-size: 18px;
   }
 
-=======
->>>>>>> 97e95467650853dd81a29265aef21a92a38b8419
   .lg\:text-\[20px\]{
     font-size: 20px;
   }
 
-<<<<<<< HEAD
   .lg\:text-\[24px\]{
     font-size: 24px;
   }
 
   .lg\:text-\[26px\]{
     font-size: 26px;
-  }
-
-  .lg\:text-\[16px\]{
-    font-size: 16px;
-=======
-  .lg\:text-\[18px\]{
-    font-size: 18px;
->>>>>>> 97e95467650853dd81a29265aef21a92a38b8419
   }
 }
 
@@ -2879,7 +3175,6 @@ input:checked + .select span{
   .xl\:text-\[20px\]{
     font-size: 20px;
   }
-<<<<<<< HEAD
 
   .xl\:text-\[24px\]{
     font-size: 24px;
@@ -2888,8 +3183,6 @@ input:checked + .select span{
   .xl\:text-\[28px\]{
     font-size: 28px;
   }
-=======
->>>>>>> 97e95467650853dd81a29265aef21a92a38b8419
 }
 
 @media (min-width: 1536px){
@@ -3266,27 +3559,22 @@ input:checked + .select span{
     line-height: 30px;
   }
 
-<<<<<<< HEAD
-=======
-  .\32xl\:text-26{
-    font-size: 26px;
-    line-height: 34px;
-  }
-
   .\32xl\:text-28{
     font-size: 28px;
     line-height: 36px;
   }
 
->>>>>>> 97e95467650853dd81a29265aef21a92a38b8419
-  .\32xl\:text-30{
-    font-size: 30px;
-    line-height: 48px;
-  }
-
   .\32xl\:text-32{
     font-size: 32px;
     line-height: 40px;
+  }
+
+  .\32xl\:text-\[20px\]{
+    font-size: 20px;
+  }
+
+  .\32xl\:text-\[24px\]{
+    font-size: 24px;
   }
 
   .\32xl\:text-\[26px\]{
@@ -3299,18 +3587,6 @@ input:checked + .select span{
 
   .\32xl\:text-\[36px\]{
     font-size: 36px;
-  }
-
-  .\32xl\:text-\[20px\]{
-    font-size: 20px;
-  }
-
-  .\32xl\:text-\[24px\]{
-    font-size: 24px;
-  }
-
-  .\32xl\:text-\[20px\]{
-    font-size: 20px;
   }
 }
 
