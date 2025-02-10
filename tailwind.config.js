@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+ /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
@@ -14,6 +14,8 @@ module.exports = {
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
       '2xl': '1536px',
+
+      '3xl': '1650px',
     },
     extend: {
       fontSize: {
@@ -44,6 +46,7 @@ module.exports = {
         'dark' : '#14142A',
         'd1' : '#262338',
         'd2' : '#4E4B66',
+        'd3' : '#2D3643',
         'error' :'#D80032',
         'orange' :'#FF8743',
         'l1' : '#D9DBE9',
@@ -55,7 +58,6 @@ module.exports = {
       },
       fontFamily: {
         'kumbh' : ['Kumbh Sans','serif'],
-      
       },
     },
   },

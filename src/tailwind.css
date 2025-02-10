@@ -1,23 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 @tailwind base;
-*{@apply font-kumbh;}
+*{@apply font-kumbh capitalize;}
 .anim{@apply duration-300 transition-all;}
 body{@apply bg-l4;}
-.text16{@apply text-12 md:text-14 2xl:text-16;}
-.text24{@apply text-18 md:text-20 2xl:text-24;}
-.text36{@apply text-24 md:text-30 2xl:text-36;}
+.text16{@apply text-14 2xl:text-16;}
+.text20{@apply text-16 xl:text-18 2xl:text-20;}
+.text24{@apply text-18 xl:text-20 2xl:text-24;}
+.text36{@apply text-20 xl:text-26 2xl:text-36;}
+.btn_primary{@apply text-center inline-block text-white font-semibold text-14 2xl:text-16 bg-primary border border-primary rounded-lg lg:rounded-xl 2xl:rounded-2xl py-2 2xl:py-2.5 lg:px-3 px-4 2xl:px-5 hover:text-primary hover:bg-transparent anim;}
+.btn_secondary{@apply text-center inline-block text-white font-semibold text-14 2xl:text-16 bg-error border border-error rounded-lg lg:rounded-xl 2xl:rounded-2xl py-2 2xl:py-2.5 lg:px-3 px-4 2xl:px-5 hover:text-error hover:bg-transparent anim;}
+.btn_secondary2{@apply text-center inline-block text-dark font-semibold text-14 2xl:text-16 bg-transparent border border-[#D9DBE9] rounded-lg lg:rounded-xl 2xl:rounded-2xl py-2 2xl:py-2.5 lg:px-3 px-4 2xl:px-5 hover:border-error hover:text-white hover:bg-error anim;}
+
 /* navbar css start */
-.nav_item{@apply relative py-1.5 pr-7 flex items-center space-x-3.5;}
-.nav_link{@apply inline-block text-secondary group-hover:text-primary text-14 md:text-16 font-medium group-hover:font-bold anim;}
+.nav_item{@apply relative py-1.5 pr-7 flex items-center space-x-2.5 2xl:space-x-3.5;}
+.nav_link{@apply inline-block text-secondary group-hover:text-primary text-14 2xl:text-16 font-medium group-hover:font-bold anim;}
 .nav_icon{@apply fill-secondary group-hover:fill-primary anim;}
 .nav_hover{@apply absolute w-1 h-0 group-hover:h-full bg-primary anim rounded-xl right-0 top-0;}
 
 .title_tab.active .icon-down{@apply rotate-180;}
 /* navbar css end  */
 /* input and label css start */
-.label{@apply block text-d2 font-semibold text-14 mb-1;}
-.inpu{@apply w-full px-3 2xl:px-5 py-2.5 2xl:py-3.5 outline-none placeholder:text-secondary font-normal text-dark text-12 md:text-14 xl:text-16 bg-white border border-l1 rounded-lg lg:rounded-2xl;}
+.label{@apply block text-d2 font-semibold text-12 xl:text-14 mb-1;}
+.inpu{@apply w-full px-3 2xl:px-5 py-2.5 2xl:py-3 outline-none placeholder:text-secondary font-normal text-dark text-14 2xl:text-16 bg-white border border-l1 rounded-lg lg:rounded-2xl;}
 /* input and label css end  */
+/* radio css start  */
+.radio{@apply w-6 h-6 rounded-full border-2 border-l1 flex items-center justify-center;}
+input:checked + .radio{@apply border-primary;}
+input:checked + .radio span{@apply opacity-100;}
+/* radio css end  */
+/* select days css start  */
+.select{@apply cursor-pointer w-full text-center px-1.5 py-3 bg-white rounded-lg lg:rounded-xl 2xl:rounded-2xl inline-block border border-l1;}
+input:checked + .select{@apply bg-primary border border-l1 anim;}
+input:checked + .select span{@apply text-white anim;}
+
+
+/* select days css end  */
+.search{@apply w-full outline-none placeholder:text-secondary bg-transparent text-dark text-12 md:text-14 2xl:text-16 pl-2.5;}
+
+/* popup tabs css start  */
+.tab_hover .tab_slot::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all;
+
+  }
+  .tab_hover .tab_slot.active::after, .tab_slot:hover::after{
+    width: 100%;
+    height: 2px;
+  }
+  .tab_hover .tab_slot li a.active{
+    color: #468F73;
+  }
+  .tab_hover li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #468F73;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all;
+  }
+  .tab_hover li a.active::after, .tab_hover li a:hover::after{
+    width: 100%;
+  }
+  .tab_hover .tab_slot li a.active{
+    color: #468F73;
+  }
+/* popup tabs css end  */
 
 @tailwind components;
 @tailwind utilities;
