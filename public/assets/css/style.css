@@ -580,13 +580,13 @@ body{
 @media (min-width: 1536px){
   .text16{
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 }
 
 .text20{
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 @media (min-width: 1280px){
@@ -686,7 +686,7 @@ body{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 }
 
@@ -735,7 +735,7 @@ body{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 }
 
@@ -762,12 +762,8 @@ body{
 }
 
 .btn_secondary2:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(216 0 50 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(216 0 50 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  background-color: rgb(217 219 233 / var(--tw-bg-opacity, 1));
 }
 
 @media (min-width: 1024px){
@@ -786,7 +782,7 @@ body{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 }
 
@@ -839,7 +835,7 @@ body{
 @media (min-width: 1536px){
   .nav_link{
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 }
 
@@ -942,7 +938,7 @@ body{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 }
 
@@ -1057,7 +1053,7 @@ input:checked + .select span{
 @media (min-width: 1536px){
   .search{
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 }
 
@@ -1232,10 +1228,6 @@ input:checked + .select span{
 
 .mt-1\.5{
   margin-top: 0.375rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
 }
 
 .mt-2\.5{
@@ -1442,12 +1434,20 @@ input:checked + .select span{
   max-width: 316px;
 }
 
+.max-w-\[450px\]{
+  max-width: 450px;
+}
+
 .max-w-\[500px\]{
   max-width: 500px;
 }
 
 .max-w-\[520px\]{
   max-width: 520px;
+}
+
+.max-w-\[554px\]{
+  max-width: 554px;
 }
 
 .-translate-x-1\/2{
@@ -1837,6 +1837,10 @@ input:checked + .select span{
   padding-left: 0.625rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .pl-5{
   padding-left: 1.25rem;
 }
@@ -1889,7 +1893,7 @@ input:checked + .select span{
 
 .text-16{
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .text-18{
@@ -1910,6 +1914,10 @@ input:checked + .select span{
 .text-24{
   font-size: 24px;
   line-height: 30px;
+}
+
+.text-\[16px\]{
+  font-size: 16px;
 }
 
 .font-bold{
@@ -2033,6 +2041,16 @@ input:checked + .select span{
   color: rgb(160 163 189 / var(--tw-text-opacity, 1));
 }
 
+.hover\:bg-error:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 0 50 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 .group:hover .group-hover\:text-error{
   --tw-text-opacity: 1;
   color: rgb(216 0 50 / var(--tw-text-opacity, 1));
@@ -2108,26 +2126,6 @@ input:checked + .select span{
     width: auto;
   }
 
-  .sm\:max-w-\[110px\]{
-    max-width: 110px;
-  }
-
-  .sm\:max-w-\[136px\]{
-    max-width: 136px;
-  }
-
-  .sm\:max-w-\[140px\]{
-    max-width: 140px;
-  }
-
-  .sm\:max-w-\[192px\]{
-    max-width: 192px;
-  }
-
-  .sm\:flex-nowrap{
-    flex-wrap: nowrap;
-  }
-
   .sm\:justify-between{
     justify-content: space-between;
   }
@@ -2147,16 +2145,8 @@ input:checked + .select span{
     margin-bottom: 1.25rem;
   }
 
-  .md\:ml-auto{
-    margin-left: auto;
-  }
-
   .md\:mr-2\.5{
     margin-right: 0.625rem;
-  }
-
-  .md\:mt-0{
-    margin-top: 0px;
   }
 
   .md\:mt-2{
@@ -2181,10 +2171,6 @@ input:checked + .select span{
 
   .md\:w-6\/12{
     width: 50%;
-  }
-
-  .md\:max-w-\[554px\]{
-    max-width: 554px;
   }
 
   .md\:flex-nowrap{
@@ -2496,7 +2482,7 @@ input:checked + .select span{
 
   .lg\:text-16{
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 
   .lg\:text-18{
@@ -2536,6 +2522,10 @@ input:checked + .select span{
     margin-bottom: 1.5rem;
   }
 
+  .xl\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .xl\:mb-2{
     margin-bottom: 0.5rem;
   }
@@ -2546,6 +2536,10 @@ input:checked + .select span{
 
   .xl\:mb-7{
     margin-bottom: 1.75rem;
+  }
+
+  .xl\:ml-auto{
+    margin-left: auto;
   }
 
   .xl\:mt-0{
@@ -2622,6 +2616,10 @@ input:checked + .select span{
 
   .xl\:w-full{
     width: 100%;
+  }
+
+  .xl\:max-w-\[250px\]{
+    max-width: 250px;
   }
 
   .xl\:max-w-full{
@@ -2705,6 +2703,16 @@ input:checked + .select span{
     padding-right: 0.5rem;
   }
 
+  .xl\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xl\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .xl\:py-3\.5{
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
@@ -2721,7 +2729,7 @@ input:checked + .select span{
 
   .xl\:text-16{
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 
   .xl\:text-20{
@@ -3108,7 +3116,7 @@ input:checked + .select span{
 
   .\32xl\:text-16{
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 
   .\32xl\:text-18{
@@ -3139,6 +3147,11 @@ input:checked + .select span{
   .\32xl\:text-36{
     font-size: 36px;
     line-height: 44px;
+  }
+
+  .\32xl\:text-32{
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
@@ -3230,7 +3243,7 @@ input:checked + .select span{
 
   .\33xl\:text-16{
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
   }
 }
 

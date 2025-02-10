@@ -9,7 +9,7 @@ body{@apply bg-l4;}
 .text36{@apply text-20 xl:text-26 2xl:text-36;}
 .btn_primary{@apply text-center inline-block text-white font-semibold text-14 2xl:text-16 bg-primary border border-primary rounded-lg lg:rounded-xl 2xl:rounded-2xl py-2 2xl:py-2.5 lg:px-3 px-4 2xl:px-5 hover:text-primary hover:bg-transparent anim;}
 .btn_secondary{@apply text-center inline-block text-white font-semibold text-14 2xl:text-16 bg-error border border-error rounded-lg lg:rounded-xl 2xl:rounded-2xl py-2 2xl:py-2.5 lg:px-3 px-4 2xl:px-5 hover:text-error hover:bg-transparent anim;}
-.btn_secondary2{@apply text-center inline-block text-dark font-semibold text-14 2xl:text-16 bg-transparent border border-[#D9DBE9] rounded-lg lg:rounded-xl 2xl:rounded-2xl py-2 2xl:py-2.5 lg:px-3 px-4 2xl:px-5 hover:border-error hover:text-white hover:bg-error anim;}
+.btn_secondary2{@apply text-center inline-block text-dark font-semibold text-14 2xl:text-16 bg-transparent border border-l1 rounded-lg lg:rounded-xl 2xl:rounded-2xl py-2 2xl:py-2.5 lg:px-3 px-4 2xl:px-5 hover:bg-l1 anim;}
 
 /* navbar css start */
 .nav_item{@apply relative py-1.5 pr-7 flex items-center space-x-2.5 2xl:space-x-3.5;}

@@ -10,159 +10,7 @@
 <body>
     <div class="flex">
         <aside id="open" class="w-64 2xl:w-72 bg-white h-screen overflow-y-auto -translate-x-full lg:translate-x-0 fixed z-10">
-            <div class="py-6 lg:py-10 2xl:py-12 border-b border-l1 p-5 text-center flex items-center justify-between">
-                <img src="assets/images/logo.png" class="max-w-44 lg:max-w- 2xl:max-w-full lg:mx-auto" alt="logo"/>
-                <span class="icon-close text-24 text-primary font-bold block lg:hidden" onclick="toggleActive('#open','translate-x-0');"></span>
-            </div>
-            <ul class="space-y-4 py-5 lg:py-7 2xl:py-9 pl-5 2xl:pl-7 pr-0">
-                <li>
-                    <a href="#" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <span href="#" class="nav_link">Dashboard</span>
-                        <span class="nav_hover"></span>
-                    </a>
-                </li>
-                
-                <li>
-                    <div class="py-1.5 pr-7 flex items-center justify-between group relative title_tab">
-                        <div class="flex items-center space-x-2.5 2xl:space-x-3.5">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <a href="#" class="nav_link">All Users </a>
-                        </div>
-                        <span class="icon-down text-20 leading-4 text-secondary group-hover:text-primary"></span>
-                        <span class="nav_hover"></span>
-                    </div>
-                    <ul class="space-y-2 inner_content hidden">
-                        <li>
-                            <div class="py-1.5 pr-7 flex items-center justify-between group relative">
-                                <div class="flex items-center space-x-2.5 2xl:space-x-3.5">
-                                <!-- <span>
-                                    <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                                </span> -->
-                                <a href="#" class="nav_link">Application User </a>
-                                </div>
-                                <span class="nav_hover"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="py-1.5 pr-7 flex items-center justify-between group relative">
-                                <div class="flex items-center space-x-2.5 2xl:space-x-3.5">
-                                <!-- <span>
-                                    <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                                </span> -->
-                                <a href="#" class="nav_link">Partner App User </a>
-                                </div>
-                                <span class="nav_hover"></span>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <span href="#" class="nav_link">All Grounds</a>
-                        <span class="nav_hover"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <span href="#" class="nav_link">Bookings</span>
-                        <span class="nav_hover"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <span href="#" class="nav_link">Ground Requests</span>
-                        <span class="nav_hover"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <span href="#" class="nav_link">Partner Requests</span>
-                        <span class="nav_hover"></span>
-                    </a>
-                </li>
-
-                <li>
-                    <div class="py-1.5 pr-7 flex items-center justify-between group relative title_tab">
-                        <div class="flex items-center space-x-2.5 2xl:space-x-3.5">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <a href="#" class="nav_link">Sport Master</a>
-                        </div>
-                        <span class="icon-down text-20 leading-4 text-secondary group-hover:text-primary"></span>
-                        <span class="nav_hover"></span>
-                    </div>
-                    <ul class="space-y-2 inner_content hidden">
-                        <li>
-                            <div class="py-1.5 pr-7 flex items-center justify-between group relative">
-                                <div class="flex items-center space-x-2.5 2xl:space-x-3.5">
-                                <!-- <span>
-                                    <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                                </span> -->
-                                <a href="#" class="nav_link">Sport Type </a>
-                                </div>
-                                <span class="nav_hover"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="py-1.5 pr-7 flex items-center justify-between group relative">
-                                <div class="flex items-center space-x-2.5 2xl:space-x-3.5">
-                                <!-- <span>
-                                    <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                                </span> -->
-                                <a href="#" class="nav_link">Sport Sub Type </a>
-                                </div>
-                                <span class="nav_hover"></span>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <span href="#" class="nav_link">Promotions</span>
-                        <span class="nav_hover"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <span href="#" class="nav_link">Review Management</span>
-                        <span class="nav_hover"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <span href="#" class="nav_link">Account & Finance</span>
-                        <span class="nav_hover"></span>
-                    </a>
-                </li>
-            </ul>
+          
         </aside>
         <main class="w-full lg:w-[calc(100%-256px)] 2xl:w-[calc(100%-288px)] ml-auto h-full">
             <!-- header start -->
@@ -172,7 +20,7 @@
                         <span class="block lg:hidden cursor-pointer" onclick="toggleActive('#open','translate-x-0');">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M13 18H5c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1zM19 13H5c-.6 0-1-.4-1-1s.4-1 1-1h14c.6 0 1 .4 1 1s-.4 1-1 1zM19 8h-8c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
                         </span>
-                        <h2 class="text36 text-dark font-bold">All Grounds</h2>
+                        <h2 class="text36 text-dark font-bold">All Grounds Fill Fild</h2>
                     </div>
                     <div class="flex items-center space-x-2.5 md:space-x-3 lg:space-x-5 2xl:space-x-6 ml-auto">
                         <div class="w-full max-w-[316px] hidden sm:flex items-center bg-white rounded-lg lg:rounded-2xl px-3 md:px-5 2xl:px-6 py-2 2xl:py-3.5">
@@ -183,7 +31,7 @@
                         </div>
                         <div>
                             <div class="w-10 h-10 lg:w-12 lg:h-12 2xl:w-14 2xl:h-14 bg-white rounded-full flex items-center justify-center">
-                                <span class="icon-notifi text-secondary text24"></span>
+                                <span class="icon-notification text-secondary text24"></span>
                             </div>
                         </div>
                         <div>
@@ -209,7 +57,7 @@
                             <div class="w-full h-48 xl:h-44 2xl:h-52 bg-l4 relative border border-dashed border-l1 rounded-lg lg:rounded-xl 2xl:rounded-2xl flex items-center justify-center">
                                 <input type="file" class="absolute opacity-0 z-10 w-full h-full inset-0">
                                 <div class="py-2 px-4 text-center">
-                                    <span class="text-22 font-medium text-secondary icon-notifi"></span>
+                                    <span class="text-22 font-medium text-secondary icon-gallery-add"></span>
                                     <span class="text-14 2xl:text-16 font-medium text-secondary underline block">Upload Ground Banner</span>
                                 </div>
                             </div>
@@ -245,7 +93,7 @@
                                 <label class="label">Ground Location <span class="text-error">*</span></label>
                                 <div class="relative">
                                     <input type="text" class="pl-10 md:pl-12 lg:pl-14 pr-2.5 md:pr-3.5 xl:pr-5 inpu" placeholder="Search Location">
-                                    <span class="icon-notifi text-secondary absolute text-16 lg:text-18 2xl:text-20 top-1/2 -translate-y-1/2 left-3 lg:left-5"></span>
+                                    <span class="icon-location_2 text-secondary absolute text-16 lg:text-18 2xl:text-20 top-1/2 -translate-y-1/2 left-3 lg:left-5"></span>
                                 </div>
                                 <div class="mt-1.5 md:mt-2 2xl:mt-3">
                                     <div class="w-auto h-auto rounded-lg lg:rounded-xl 2xl:rounded-2xl">
@@ -303,7 +151,7 @@
                                             <div class="w-full h-full relative border border-dashed border-l1 rounded-lg lg:rounded-xl 2xl:rounded-2xl">
                                                 <input type="file" class="absolute opacity-0 z-10 w-full h-full inset-0">
                                                 <div class="anim absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 py-2 px-4">
-                                                    <span class="icon-notifi text-secondary text-16 md:text-18 lg:text-20 2xl:text-24"></span>
+                                                    <span class="icon-export text-secondary text-16 md:text-18 lg:text-20 2xl:text-24"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -315,7 +163,7 @@
                                                     <img src="assets/images/ground_img.png" class="w-full h-full object-cover" alt="ground_img">
                                                 </div>
                                                 <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                                                    <span class="icon-notifi text16"></span>
+                                                    <span class="icon-eye text16"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -327,7 +175,7 @@
                                                     <img src="assets/images/ground_img.png" class="w-full h-full object-cover" alt="ground_img">
                                                 </div>
                                                 <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                                                    <span class="icon-notifi text16"></span>
+                                                    <span class="icon-eye text16"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -339,7 +187,7 @@
                                                     <img src="assets/images/ground_img.png" class="w-full h-full object-cover" alt="ground_img">
                                                 </div>
                                                 <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                                                    <span class="icon-notifi text16"></span>
+                                                    <span class="icon-eye text16"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -351,7 +199,7 @@
                                                     <img src="assets/images/ground_img.png" class="w-full h-full object-cover" alt="ground_img">
                                                 </div>
                                                 <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                                                    <span class="icon-notifi text16"></span>
+                                                    <span class="icon-eye text16"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -366,7 +214,7 @@
                                             <div class="w-full h-full relative border border-dashed border-l1 rounded-lg lg:rounded-xl 2xl:rounded-2xl">
                                                 <input type="file" class="absolute opacity-0 z-10 w-full h-full inset-0">
                                                 <div class="anim absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 py-2 px-4">
-                                                    <span class="icon-notifi text-secondary text-16 md:text-18 lg:text-20 2xl:text-24"></span>
+                                                    <span class="icon-export text-secondary text-16 md:text-18 lg:text-20 2xl:text-24"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -378,7 +226,7 @@
                                                     <img src="assets/images/ground_img.png" class="w-full h-full object-cover" alt="ground_img">
                                                 </div>
                                                 <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                                                    <span class="icon-notifi text16"></span>
+                                                    <span class="icon-eye text16"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -390,7 +238,7 @@
                                                     <img src="assets/images/ground_img.png" class="w-full h-full object-cover" alt="ground_img">
                                                 </div>
                                                 <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                                                    <span class="icon-notifi text16"></span>
+                                                    <span class="icon-eye text16"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -402,7 +250,7 @@
                                                     <img src="assets/images/ground_img.png" class="w-full h-full object-cover" alt="ground_img">
                                                 </div>
                                                 <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                                                    <span class="icon-notifi text16"></span>
+                                                    <span class="icon-eye text16"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -414,7 +262,7 @@
                                                     <img src="assets/images/ground_img.png" class="w-full h-full object-cover" alt="ground_img">
                                                 </div>
                                                 <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                                                    <span class="icon-notifi text16"></span>
+                                                    <span class="icon-eye text16"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -427,139 +275,79 @@
                         <div class="flex items-start justify-between">
                             <h4 class="text20 font-bold text-d3">Add Ground</h4>
                             <a href="" class="flex items-center space-x-2">
-                                <span class="icon-plus text-16 lg:text-18 2xl:text-20 text-primary"></span>
+                                <span class="icon-add text-16 lg:text-18 2xl:text-20 text-primary"></span>
                                 <span class="inline-block text-primary font-semibold underline text-14 xl:text-16">Add Play Area</span>
                             </a>
                         </div>
-                        <div class="border border-l1 rounded-lg lg:rounded-xl 2xl:rounded-2xl p-3 xl:p-5">
-                            <div class="flex flex-wrap -mx-1.5 2xl:-mx-2.5 3xl:-mx-3.5">
-                                <div class="w-full xs:w-1/2 md:w-1/3 p-1.5 2xl:p-2.5 3xl:p-3.5">
-                                    <label class="label">Name <span class="text-error">*</span></label>
-                                    <input type="text" class="inpu" placeholder="Enter Name (Ex., Turf, Court, Pitch)"/>
+                        <div class="border border-l1 rounded-lg lg:rounded-xl 2xl:rounded-2xl p-3 lg:p-5 2xl:p-7">
+                            <div class="flex flex-wrap xl:justify-between -mx-1.5 xl:-mx-2.5">
+                                <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Turf Name</h5>
+                                    <span class="inline-block text16 text-dark font-bold">Turf 1</span>
                                 </div>
-                                <div class="w-full xs:w-1/2 md:w-1/3 p-1.5 2xl:p-2.5 3xl:p-3.5">
-                                    <label class="label">Size <span class="text-error">*</span></label>
-                                    <input type="text" class="inpu" placeholder="Enter Size (Ex., 5:5, 7:7)"/>
+                                <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Turf Size</h5>
+                                    <span class="inline-block text16 text-dark font-bold">(7:7)</span>
                                 </div>
-                                <div class="w-full xs:w-1/2 md:w-1/3 p-1.5 2xl:p-2.5 3xl:p-3.5">
-                                    <label class="label">Slot Hour Size  <span class="text-error">*</span></label>
-                                    <input type="text" class="inpu" placeholder="Enter Turf Name"/>
+                                <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Slot Hour Size</h5>
+                                    <span class="inline-block text16 text-dark font-bold">1 Hour</span>
                                 </div>
-                                <div class="w-full xs:w-1/2 xl:w-1/3 p-1.5 2xl:p-2.5 3xl:p-3.5">
-                                   <div class="flex items-center -mx-1.5 2xl:-mx-2.5 3xl:-mx-3.5">
-                                        <div class="w-1/2 px-1.5 2xl:px-2.5 3xl:px-3.5">
-                                            <label class="label">Slot Start From</label>
-                                            <input type="text" class="inpu" placeholder="Enter Turf Name"/>
-                                        </div>
-                                        <div class="w-1/2 px-1.5 2xl:px-2.5 3xl:px-3.5">
-                                            <label class="label">Slot End To</label>
-                                            <input type="text" class="inpu" placeholder="Enter Turf Name"/>
-                                        </div>
-                                   </div>
-                                   <div class="flex items-center mt-1.5">
-                                        <div class="w-max relative">
-                                            <input type="radio" name="yes/no" id="radio" class="absolute inset-0 w-full h-full opacity-0 z-10">
-                                            <div class="radio anim">
-                                                <span class="w-2.5 h-2.5 bg-primary rounded-full opacity-0 anim"></span>
-                                            </div>
-                                        </div>
-                                        <label for="radio" class="ml-2 block text-14 font-semibold text-dark">24 Hour Open</label>
-                                   </div>
+                                <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Slot Start From</h5>
+                                    <span class="inline-block text16 text-dark font-bold">06:00 AM</span>
                                 </div>
-                                <div class="w-full xs:w-1/2 xl:w-5/12 2xl:w-1/3 p-1.5 2xl:p-2.5 3xl:p-3.5">
-                                    <label class="label">Select Days <span class="text-error">*</span></label>
-                                    <div class="flex flex-wrap -mx-1">
-                                        <div class="w-[calc(100%/7)] p-1">
-                                            <div class="relative">
-                                                <input type="radio" class="absolute inset-0 w-full h-full px-1.5 opacity-0 z-10 cursor-pointer" name="select" placeholder="Mon"/>
-                                                <div class="select">
-                                                    <span class="block text-secondary font-normal text-12 xl:text-14 3xl:text-16">mon</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[calc(100%/7)] p-1">
-                                            <div class="relative">
-                                                <input type="radio" class="absolute inset-0 w-full h-full px-1.5 opacity-0 z-10 cursor-pointer" name="select" placeholder="Mon"/>
-                                                <div class="select">
-                                                    <span class="block text-secondary font-normal text-12 xl:text-14 3xl:text-16">Tue</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[calc(100%/7)] p-1">
-                                            <div class="relative">
-                                                <input type="radio" class="absolute inset-0 w-full h-full px-1.5 opacity-0 z-10 cursor-pointer" name="select" placeholder="Mon"/>
-                                                <div class="select">
-                                                    <span class="block text-secondary font-normal text-12 xl:text-14 3xl:text-16">Wed</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[calc(100%/7)] p-1">
-                                            <div class="relative">
-                                                <input type="radio" class="absolute inset-0 w-full h-full px-1.5 opacity-0 z-10 cursor-pointer" name="select" placeholder="Mon"/>
-                                                <div class="select">
-                                                    <span class="block text-secondary font-normal text-12 xl:text-14 3xl:text-16">Thu</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[calc(100%/7)] p-1">
-                                            <div class="relative">
-                                                <input type="radio" class="absolute inset-0 w-full h-full px-1.5 opacity-0 z-10 cursor-pointer" name="select" placeholder="Mon"/>
-                                                <div class="select">
-                                                    <span class="block text-secondary font-normal text-12 xl:text-14 3xl:text-16">Fri</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[calc(100%/7)] p-1">
-                                            <div class="relative">
-                                                <input type="radio" class="absolute inset-0 w-full h-full px-1.5 opacity-0 z-10 cursor-pointer" name="select" placeholder="Mon"/>
-                                                <div class="select">
-                                                    <span class="block text-secondary font-normal text-12 xl:text-14 3xl:text-16">Sat</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[calc(100%/7)] p-1">
-                                            <div class="relative">
-                                                <input type="radio" class="absolute inset-0 w-full h-full px-1.5 opacity-0 z-10 cursor-pointer" name="select" placeholder="Mon"/>
-                                                <div class="select">
-                                                    <span class="block text-secondary font-normal text-12 xl:text-14 3xl:text-16">Sun</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- radio button  -->
-                                    <div class="flex items-center mt-1.5">
-                                        <div class="w-max relative">
-                                            <input type="radio" name="select_days" id="select_days" class="absolute inset-0 w-full h-full opacity-0 z-10">
-                                            <div class="radio anim">
-                                                <span class="w-2.5 h-2.5 bg-primary rounded-full opacity-0 anim"></span>
-                                            </div>
-                                        </div>
-                                        <label for="select_days" class="ml-2 block text-14 font-semibold text-dark">Select All Days</label>
-                                    </div>
-                                    <!-- radio button  -->
+                                <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Slot End To</h5>
+                                    <span class="inline-block text16 text-dark font-bold">06:00 AM</span>
                                 </div>
-                                <div class="w-full xs:w-1/2 md:w-1/3 p-1.5 2xl:p-2.5 3xl:p-3.5">
-                                    <label class="label">All Slot Price Set <span class="text-error">*</span></label>
-                                    <input type="text" class="inpu" placeholder="Set Price"/>
-                                    <!-- radio button  -->
-                                    <div class="flex items-center mt-1.5">
-                                        <div class="w-max relative">
-                                            <input type="radio" name="set_manually" id="set_manually" class="absolute inset-0 w-full h-full opacity-0 z-10">
-                                            <div class="radio anim">
-                                                <span class="w-2.5 h-2.5 bg-primary rounded-full opacity-0 anim"></span>
-                                            </div>
-                                        </div>
-                                        <label for="set_manually" class="ml-2 block text-14 font-semibold text-dark">Set Manually</label>
-                                    </div>
-                                    <!-- radio button  -->
+                                <div class="w-full sm:w-1/2 md:w-6/12 lg:w-5/12 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Days</h5>
+                                    <span class="inline-block text16 text-dark font-bold">Mon, Tue, Wed, Thu, Fri, Sat, Sun</span>
+                                </div>
+                                <div class="w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Slot Price</h5>
+                                    <a href="" class="inline-block text16 text-primary underline font-bold">See Manually Preview</a>
                                 </div>
                             </div>
-                            <div class="flex items-center justify-center space-x-2 2xl:space-x-4 mt-2.5 lg:mt-4 2xl:mt-6">
-                                <a href="" class="inline-block text-primary font-semibold underline text-14 xl:text-16">Add Play Area </a>
-                                <div class="btn_primary text-center w-full max-w-[133px]">
-                                    <button>Add</button>
+                        </div>
+                        <div class="border border-l1 rounded-lg lg:rounded-xl 2xl:rounded-2xl p-3 lg:p-5 2xl:p-7">
+                            <div class="flex flex-wrap xl:justify-between -mx-1.5 xl:-mx-2.5">
+                                <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Turf Name</h5>
+                                    <span class="inline-block text16 text-dark font-bold">Turf 1</span>
+                                </div>
+                                <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Turf Size</h5>
+                                    <span class="inline-block text16 text-dark font-bold">(7:7)</span>
+                                </div>
+                                <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Slot Hour Size</h5>
+                                    <span class="inline-block text16 text-dark font-bold">1 Hour</span>
+                                </div>
+                                <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Slot Start From</h5>
+                                    <span class="inline-block text16 text-dark font-bold">06:00 AM</span>
+                                </div>
+                                <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Slot End To</h5>
+                                    <span class="inline-block text16 text-dark font-bold">06:00 AM</span>
+                                </div>
+                                <div class="w-full sm:w-1/2 md:w-6/12 lg:w-5/12 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Days</h5>
+                                    <span class="inline-block text16 text-dark font-bold">Mon, Tue, Wed, Thu, Fri, Sat, Sun</span>
+                                </div>
+                                <div class="w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-auto p-1.5 xl:p-2.5">
+                                    <h5 class="text-14 font-semibold text-d2 mb-1 xl:mb-2">Slot Price</h5>
+                                    <a href="" class="inline-block text16 text-primary underline font-bold">See Manually Preview</a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2 2xl:space-x-4 mt-2.5 lg:mt-4 2xl:mt-6">
+                            <a href="" class="inline-block text-primary font-semibold underline text-14 xl:text-16">Preview Slots</a>
+                            <button class="btn_primary text-center w-full max-w-[133px]">
+                                Add
+                            </button>
                         </div>
                     </div>
                 </div>
