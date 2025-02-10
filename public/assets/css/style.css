@@ -1923,6 +1923,22 @@ input:checked + .select span{
   font-size: 16px;
 }
 
+.text-\[18px\]{
+  font-size: 18px;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
+}
+
+.text-\[12px\]{
+  font-size: 12px;
+}
+
+.text-\[14px\]{
+  font-size: 14px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2252,9 +2268,12 @@ input:checked + .select span{
     line-height: 26px;
   }
 
-  .md\:text-24{
+  .md\:text-\[20px\]{
+    font-size: 20px;
+  }
+
+  .md\:text-\[24px\]{
     font-size: 24px;
-    line-height: 30px;
   }
 }
 
@@ -2495,6 +2514,26 @@ input:checked + .select span{
     font-size: 26px;
     line-height: 34px;
   }
+
+  .lg\:text-\[18px\]{
+    font-size: 18px;
+  }
+
+  .lg\:text-\[20px\]{
+    font-size: 20px;
+  }
+
+  .lg\:text-\[24px\]{
+    font-size: 24px;
+  }
+
+  .lg\:text-\[26px\]{
+    font-size: 26px;
+  }
+
+  .lg\:text-\[16px\]{
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1280px){
@@ -2733,14 +2772,21 @@ input:checked + .select span{
     line-height: 28px;
   }
 
-  .xl\:text-24{
-    font-size: 24px;
-    line-height: 30px;
-  }
-
   .xl\:text-28{
     font-size: 28px;
     line-height: 36px;
+  }
+
+  .xl\:text-\[20px\]{
+    font-size: 20px;
+  }
+
+  .xl\:text-\[24px\]{
+    font-size: 24px;
+  }
+
+  .xl\:text-\[28px\]{
+    font-size: 28px;
   }
 }
 
@@ -3122,11 +3168,6 @@ input:checked + .select span{
     line-height: 30px;
   }
 
-  .\32xl\:text-26{
-    font-size: 26px;
-    line-height: 34px;
-  }
-
   .\32xl\:text-30{
     font-size: 30px;
     line-height: 48px;
@@ -3137,9 +3178,20 @@ input:checked + .select span{
     line-height: 40px;
   }
 
-  .\32xl\:text-36{
+  .\32xl\:text-\[26px\]{
+    font-size: 26px;
+  }
+
+  .\32xl\:text-\[30px\]{
+    font-size: 30px;
+  }
+
+  .\32xl\:text-\[36px\]{
     font-size: 36px;
-    line-height: 44px;
+  }
+
+  .\32xl\:text-\[20px\]{
+    font-size: 20px;
   }
 }
 
