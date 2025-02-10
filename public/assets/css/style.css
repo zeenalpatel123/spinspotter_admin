@@ -1157,6 +1157,11 @@ input:checked + .select span{
   margin: auto;
 }
 
+.-mx-0\.5{
+  margin-left: -0.125rem;
+  margin-right: -0.125rem;
+}
+
 .-mx-1{
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -1190,11 +1195,6 @@ input:checked + .select span{
 .my-2\.5{
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
-}
-
-.-mx-0\.5{
-  margin-left: -0.125rem;
-  margin-right: -0.125rem;
 }
 
 .mb-0{
@@ -1308,10 +1308,6 @@ input:checked + .select span{
   height: 12rem;
 }
 
-.h-5{
-  height: 1.25rem;
-}
-
 .h-6{
   height: 1.5rem;
 }
@@ -1362,10 +1358,6 @@ input:checked + .select span{
 
 .w-48{
   width: 12rem;
-}
-
-.w-5{
-  width: 1.25rem;
 }
 
 .w-6{
@@ -1453,13 +1445,12 @@ input:checked + .select span{
   max-width: 520px;
 }
 
-<<<<<<< HEAD
 .max-w-\[554px\]{
   max-width: 554px;
-=======
+}
+
 .max-w-lg{
   max-width: 32rem;
->>>>>>> 4c400478d99793234e4aada745a8f78158f30498
 }
 
 .-translate-x-1\/2{
@@ -1721,6 +1712,10 @@ input:checked + .select span{
      object-fit: cover;
 }
 
+.p-0\.5{
+  padding: 0.125rem;
+}
+
 .p-1{
   padding: 0.25rem;
 }
@@ -1747,10 +1742,6 @@ input:checked + .select span{
 
 .p-5{
   padding: 1.25rem;
-}
-
-.p-0\.5{
-  padding: 0.125rem;
 }
 
 .px-1\.5{
@@ -1851,10 +1842,6 @@ input:checked + .select span{
 
 .pl-2\.5{
   padding-left: 0.625rem;
-}
-
-.pl-4{
-  padding-left: 1rem;
 }
 
 .pl-5{
@@ -2310,14 +2297,6 @@ input:checked + .select span{
     height: 3rem;
   }
 
-  .lg\:h-6{
-    height: 1.5rem;
-  }
-
-  .lg\:h-7{
-    height: 1.75rem;
-  }
-
   .lg\:h-8{
     height: 2rem;
   }
@@ -2344,14 +2323,6 @@ input:checked + .select span{
 
   .lg\:w-5\/12{
     width: 41.666667%;
-  }
-
-  .lg\:w-6{
-    width: 1.5rem;
-  }
-
-  .lg\:w-7{
-    width: 1.75rem;
   }
 
   .lg\:w-8{
@@ -2840,10 +2811,6 @@ input:checked + .select span{
     height: 18rem;
   }
 
-  .\32xl\:h-8{
-    height: 2rem;
-  }
-
   .\32xl\:h-9{
     height: 2.25rem;
   }
@@ -2886,10 +2853,6 @@ input:checked + .select span{
 
   .\32xl\:w-72{
     width: 18rem;
-  }
-
-  .\32xl\:w-8{
-    width: 2rem;
   }
 
   .\32xl\:w-9{
@@ -3169,14 +3132,14 @@ input:checked + .select span{
     line-height: 48px;
   }
 
-  .\32xl\:text-36{
-    font-size: 36px;
-    line-height: 44px;
-  }
-
   .\32xl\:text-32{
     font-size: 32px;
     line-height: 40px;
+  }
+
+  .\32xl\:text-36{
+    font-size: 36px;
+    line-height: 44px;
   }
 }
 
@@ -3196,10 +3159,6 @@ input:checked + .select span{
 
   .\33xl\:h-36{
     height: 9rem;
-  }
-
-  .\33xl\:h-8{
-    height: 2rem;
   }
 
   .\33xl\:h-\[120px\]{
@@ -3228,10 +3187,6 @@ input:checked + .select span{
 
   .\33xl\:w-4\/12{
     width: 33.333333%;
-  }
-
-  .\33xl\:w-8{
-    width: 2rem;
   }
 
   .\33xl\:w-\[120px\]{
