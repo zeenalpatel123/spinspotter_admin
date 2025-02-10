@@ -29,7 +29,7 @@ input:checked + .radio{@apply border-primary;}
 input:checked + .radio span{@apply opacity-100;}
 /* radio css end  */
 /* select days css start  */
-.select{@apply cursor-pointer w-full text-center px-1.5 py-3 bg-white rounded-lg lg:rounded-xl 2xl:rounded-2xl inline-block border border-l1;}
+.select{@apply cursor-pointer w-full text-center px-1.5 py-2 2xl:py-3 bg-white rounded-lg lg:rounded-xl 2xl:rounded-2xl inline-block border border-l1;}
 input:checked + .select{@apply bg-primary border border-l1 anim;}
 input:checked + .select span{@apply text-white anim;}
 
