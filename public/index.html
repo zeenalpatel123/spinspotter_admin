@@ -17,9 +17,10 @@
             <ul class="space-y-4 py-5 lg:py-7 2xl:py-9 pl-5 2xl:pl-7 pr-0">
                 <li>
                     <a href="#" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
+                        <div class="nav_ico">
+                            <span class="icon-s_category text-gray-400 text-[24px] block group-hover:hidden"></span>
+                            <span class="icon-category text-[24px] hidden group-hover:block group-hover:text-primary"></span>
+                        </div>
                         <span href="#" class="nav_link">Dashboard</span>
                         <span class="nav_hover"></span>
                     </a>
@@ -28,12 +29,13 @@
                 <li>
                     <div class="py-1.5 pr-7 flex items-center justify-between group relative title_tab">
                         <div class="flex items-center space-x-2.5 2xl:space-x-3.5">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <a href="#" class="nav_link">All Users </a>
+                            <div class="nav_ico">
+                                <span class="icon-s_profile text-gray-400 text-[24px] block group-hover:hidden"></span>
+                                <span class="icon-profile text-[24px] hidden group-hover:block group-hover:text-primary"></span>
+                            </div>
+                            <a href="#" class="nav_link">All Users </a>
                         </div>
-                        <span class="icon-down text-[16px] leading-4 text-secondary group-hover:text-primary"></span>
+                        <span class="icon-down text-[14px] xs:text-[16px] leading-4 text-secondary group-hover:text-primary"></span>
                         <span class="nav_hover"></span>
                     </div>
                     <ul class="space-y-2 inner_content hidden">
@@ -63,36 +65,40 @@
                 </li>
                 <li>
                     <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
+                        <div class="nav_ico">
+                            <span class="icon-s_ground text-gray-400 text-[24px] block group-hover:hidden"></span>
+                            <span class="icon-ground text-[24px] hidden group-hover:block group-hover:text-primary"></span>
+                        </div>
                         <span href="#" class="nav_link">All Grounds</a>
                         <span class="nav_hover"></span>
                     </a>
                 </li>
                 <li>
                     <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
+                        <div class="nav_ico">
+                            <span class="icon-s_md text-gray-400 text-[24px] block group-hover:hidden"></span>
+                            <span class="icon-md text-[24px] hidden group-hover:block group-hover:text-primary"></span>
+                        </div>
                         <span href="#" class="nav_link">Bookings</span>
                         <span class="nav_hover"></span>
                     </a>
                 </li>
                 <li>
                     <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
+                        <div class="nav_ico">
+                            <span class="icon-s_ground text-gray-400 text-[24px] block group-hover:hidden"></span>
+                            <span class="icon-ground text-[24px] hidden group-hover:block group-hover:text-primary"></span>
+                        </div>
                         <span href="#" class="nav_link">Ground Requests</span>
                         <span class="nav_hover"></span>
                     </a>
                 </li>
                 <li>
                     <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
+                        <div class="nav_ico">
+                            <span class="icon-s_user-tick text-gray-400 text-[24px] block group-hover:hidden"></span>
+                            <span class="icon-user-tick text-[24px] hidden group-hover:block group-hover:text-primary"></span>
+                        </div>
                         <span href="#" class="nav_link">Partner Requests</span>
                         <span class="nav_hover"></span>
                     </a>
@@ -101,10 +107,11 @@
                 <li>
                     <div class="py-1.5 pr-7 flex items-center justify-between group relative title_tab">
                         <div class="flex items-center space-x-2.5 2xl:space-x-3.5">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
-                        <a href="#" class="nav_link">Sport Master</a>
+                            <div class="nav_ico">
+                                <span class="icon-bspo_master text-gray-400 text-[24px] block group-hover:hidden"></span>
+                                <span class="icon-spo_master text-[24px] hidden group-hover:block group-hover:text-primary"></span>
+                            </div>
+                            <a href="#" class="nav_link">Sport Master</a>
                         </div>
                         <span class="icon-down text-[16px] leading-4 text-secondary group-hover:text-primary"></span>
                         <span class="nav_hover"></span>
@@ -137,27 +144,30 @@
 
                 <li>
                     <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
+                        <div class="nav_ico">
+                            <span class="icon-b_promotions text-gray-400 text-[24px] block group-hover:hidden"></span>
+                            <span class="icon-promotions text-[24px] hidden group-hover:block group-hover:text-primary"></span>
+                        </div>
                         <span href="#" class="nav_link">Promotions</span>
                         <span class="nav_hover"></span>
                     </a>
                 </li>
                 <li>
                     <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
+                        <div class="nav_ico">
+                            <span class="icon-b_review text-gray-400 text-[24px] block group-hover:hidden"></span>
+                            <span class="icon-review text-[24px] hidden group-hover:block group-hover:text-primary"></span>
+                        </div>
                         <span href="#" class="nav_link">Review Management</span>
                         <span class="nav_hover"></span>
                     </a>
                 </li>
                 <li>
                     <a href="" class="nav_item group">
-                        <span>
-                            <svg class="nav_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.558 1.66797H13.9747C12.158 1.66797 11.1997 2.6263 11.1997 4.44297V6.0263C11.1997 7.84297 12.158 8.8013 13.9747 8.8013H15.558C17.3747 8.8013 18.333 7.84297 18.333 6.0263V4.44297C18.333 2.6263 17.3747 1.66797 15.558 1.66797Z" /> <path d="M6.03366 11.1914H4.45033C2.62533 11.1914 1.66699 12.1497 1.66699 13.9664V15.5497C1.66699 17.3747 2.62533 18.3331 4.44199 18.3331H6.02533C7.84199 18.3331 8.80033 17.3747 8.80033 15.5581V13.9747C8.80866 12.1497 7.85033 11.1914 6.03366 11.1914Z" /> <path d="M5.24199 8.81797C7.21641 8.81797 8.81699 7.21739 8.81699 5.24297C8.81699 3.26855 7.21641 1.66797 5.24199 1.66797C3.26757 1.66797 1.66699 3.26855 1.66699 5.24297C1.66699 7.21739 3.26757 8.81797 5.24199 8.81797Z" /> <path d="M14.7586 18.3316C16.733 18.3316 18.3336 16.7311 18.3336 14.7566C18.3336 12.7822 16.733 11.1816 14.7586 11.1816C12.7842 11.1816 11.1836 12.7822 11.1836 14.7566C11.1836 16.7311 12.7842 18.3316 14.7586 18.3316Z"/> </svg>
-                        </span>
+                        <div class="nav_ico">
+                            <span class="icon-b_account text-gray-400 text-[24px] block group-hover:hidden"></span>
+                            <span class="icon-account text-[24px] hidden group-hover:block group-hover:text-primary"></span>
+                        </div>
                         <span href="#" class="nav_link">Account & Finance</span>
                         <span class="nav_hover"></span>
                     </a>
@@ -177,13 +187,13 @@
                     <div class="flex items-center space-x-2.5 md:space-x-3 lg:space-x-5 2xl:space-x-6 ml-auto">
                         <div class="w-full hidden sm:flex items-center bg-white rounded-lg lg:rounded-2xl px-3 md:px-5 2xl:px-6 py-2 2xl:py-3.5">
                             <label for="search">
-                                <span class="block icon-search-normal text-dark text-16 md:text-18 lg:text-20 2xl:text-24 cursor-pointer"></span>
+                                <span class="block icon-search-normal text-dark text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[24px] cursor-pointer"></span>
                             </label>
                             <input type="search" name="search" id="search" class="w-full outline-none placeholder:text-secondary bg-transparent text-dark text-12 md:text-14 2xl:text-16 pl-2.5" placeholder="Search Member"/>
                         </div>
                         <div>
                             <div class="w-10 h-10 lg:w-12 lg:h-12 2xl:w-14 2xl:h-14 bg-white rounded-full flex items-center justify-center">
-                                <span class="icon-notification text-secondary text-18 lg:text-20 2xl:text-24"></span>
+                                <span class="icon-notification text-secondary text-[18px] lg:text-[20px] 2xl:text-[24px]"></span>
                             </div>
                         </div>
                         <div>
@@ -200,7 +210,7 @@
             <!-- content start  -->
             <div class="p-3 md:p-5 lg:p-7 2xl:p-9 pt-3 2xl:pt-4 space-y-4 md:space-y-5 2xl:space-y-7">
                 <div class="p-2.5 md:p-3 2xl:p-4 bg-white rounded-lg lg:rounded-2xl inline-flex items-center space-x-2">
-                    <span class="icon-calendar text24 text-dark"></span>
+                    <span class="icon-calendar text-[18px] xl:text-[20px] 2xl:text-[24px] text-dark"></span>
                     <span class="inline-block text16 text-dark font-normal">April 11 - April 24</span>
                 </div>
                 <div class="flex flex-wrap -mx-2 2xl:-mx-3.5">
@@ -209,7 +219,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_profile text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -224,7 +234,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_profile text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -239,7 +249,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_profile text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -254,7 +264,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_profile text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -269,7 +279,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_profile text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -284,7 +294,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_ground text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -299,7 +309,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_ground text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -314,7 +324,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_ground text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -329,7 +339,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_ground text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -344,7 +354,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_user-tick text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -359,7 +369,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_md text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -374,7 +384,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_md text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -389,7 +399,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-s_md text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">
@@ -404,7 +414,7 @@
                             <div class="flex items-center space-x-3 2xl:space-x-4">
                                 <div>
                                     <span class="w-10 h-10 xl:w-11 xl:h-11 3xl:w-14 3xl:h-14 bg-l4 rounded-full flex items-center justify-center">
-                                        <span class="icon-s_profile text-18 lg:text-20 xl:text-28 2xl:text-32 text-primary"></span>
+                                        <span class="icon-coin text-20 xl:text-28 2xl:text-32 text-primary"></span>
                                     </span>
                                 </div>
                                 <div class="space-y-1">

@@ -21,10 +21,11 @@ body{@apply bg-l4;}
 /* navbar css end  */
 /* input and label css start */
 .label{@apply block text-d2 font-semibold text-12 xl:text-14 mb-1;}
-.inpu{@apply w-full px-3 2xl:px-5 py-2.5 2xl:py-3 outline-none placeholder:text-secondary font-normal text-dark text-14 2xl:text-16 bg-white border border-l1 rounded-lg lg:rounded-2xl;}
+.inpu{@apply w-full px-3 py-2 lg:py-2.5 2xl:px-5 2xl:py-3 outline-none placeholder:text-secondary font-normal text-dark text-12 lg:text-14 2xl:text-16 bg-white border border-l1 rounded-lg lg:rounded-2xl;}
 /* input and label css end  */
 /* radio css start  */
-.radio{@apply w-6 h-6 rounded-full border-2 border-l1 flex items-center justify-center;}
+.radio{@apply w-5 h-5 2xl:w-6 2xl:h-6 rounded-full border-2 border-l1 flex items-center justify-center;}
+.radio span{@apply w-2 h-2 2xl:w-2.5 2xl:h-2.5 bg-primary rounded-full opacity-0;}
 input:checked + .radio{@apply border-primary;}
 input:checked + .radio span{@apply opacity-100;}
 /* radio css end  */
