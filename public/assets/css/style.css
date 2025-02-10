@@ -1440,8 +1440,16 @@ input:checked + .select span{
   max-width: 1500px;
 }
 
+.max-w-\[150px\]{
+  max-width: 150px;
+}
+
 .max-w-\[166px\]{
   max-width: 166px;
+}
+
+.max-w-\[180px\]{
+  max-width: 180px;
 }
 
 .max-w-\[190px\]{
@@ -1470,14 +1478,6 @@ input:checked + .select span{
 
 .max-w-lg{
   max-width: 32rem;
-}
-
-.max-w-\[180px\]{
-  max-width: 180px;
-}
-
-.max-w-\[150px\]{
-  max-width: 150px;
 }
 
 .-translate-x-1\/2{
@@ -1955,6 +1955,10 @@ input:checked + .select span{
   line-height: 30px;
 }
 
+.text-\[12px\]{
+  font-size: 12px;
+}
+
 .text-\[14px\]{
   font-size: 14px;
 }
@@ -1967,21 +1971,12 @@ input:checked + .select span{
   font-size: 18px;
 }
 
-<<<<<<< HEAD
 .text-\[20px\]{
   font-size: 20px;
 }
 
-.text-\[12px\]{
-  font-size: 12px;
-}
-
-.text-\[14px\]{
-  font-size: 14px;
-=======
 .text-\[24px\]{
   font-size: 24px;
->>>>>>> 97e95467650853dd81a29265aef21a92a38b8419
 }
 
 .font-bold{
@@ -2355,16 +2350,16 @@ input:checked + .select span{
     line-height: 26px;
   }
 
+  .md\:text-\[18px\]{
+    font-size: 18px;
+  }
+
   .md\:text-\[20px\]{
     font-size: 20px;
   }
 
   .md\:text-\[24px\]{
     font-size: 24px;
-  }
-
-  .md\:text-\[18px\]{
-    font-size: 18px;
   }
 }
 
@@ -2601,37 +2596,24 @@ input:checked + .select span{
     line-height: 28px;
   }
 
-  .lg\:text-26{
-    font-size: 26px;
-    line-height: 34px;
+  .lg\:text-\[16px\]{
+    font-size: 16px;
   }
 
-<<<<<<< HEAD
   .lg\:text-\[18px\]{
     font-size: 18px;
   }
 
-=======
->>>>>>> 97e95467650853dd81a29265aef21a92a38b8419
   .lg\:text-\[20px\]{
     font-size: 20px;
   }
 
-<<<<<<< HEAD
   .lg\:text-\[24px\]{
     font-size: 24px;
   }
 
   .lg\:text-\[26px\]{
     font-size: 26px;
-  }
-
-  .lg\:text-\[16px\]{
-    font-size: 16px;
-=======
-  .lg\:text-\[18px\]{
-    font-size: 18px;
->>>>>>> 97e95467650853dd81a29265aef21a92a38b8419
   }
 }
 
@@ -2866,11 +2848,6 @@ input:checked + .select span{
     line-height: 20px;
   }
 
-  .xl\:text-20{
-    font-size: 20px;
-    line-height: 28px;
-  }
-
   .xl\:text-28{
     font-size: 28px;
     line-height: 36px;
@@ -2879,7 +2856,6 @@ input:checked + .select span{
   .xl\:text-\[20px\]{
     font-size: 20px;
   }
-<<<<<<< HEAD
 
   .xl\:text-\[24px\]{
     font-size: 24px;
@@ -2888,8 +2864,6 @@ input:checked + .select span{
   .xl\:text-\[28px\]{
     font-size: 28px;
   }
-=======
->>>>>>> 97e95467650853dd81a29265aef21a92a38b8419
 }
 
 @media (min-width: 1536px){
@@ -3266,27 +3240,22 @@ input:checked + .select span{
     line-height: 30px;
   }
 
-<<<<<<< HEAD
-=======
-  .\32xl\:text-26{
-    font-size: 26px;
-    line-height: 34px;
-  }
-
   .\32xl\:text-28{
     font-size: 28px;
     line-height: 36px;
   }
 
->>>>>>> 97e95467650853dd81a29265aef21a92a38b8419
-  .\32xl\:text-30{
-    font-size: 30px;
-    line-height: 48px;
-  }
-
   .\32xl\:text-32{
     font-size: 32px;
     line-height: 40px;
+  }
+
+  .\32xl\:text-\[20px\]{
+    font-size: 20px;
+  }
+
+  .\32xl\:text-\[24px\]{
+    font-size: 24px;
   }
 
   .\32xl\:text-\[26px\]{
@@ -3299,18 +3268,6 @@ input:checked + .select span{
 
   .\32xl\:text-\[36px\]{
     font-size: 36px;
-  }
-
-  .\32xl\:text-\[20px\]{
-    font-size: 20px;
-  }
-
-  .\32xl\:text-\[24px\]{
-    font-size: 24px;
-  }
-
-  .\32xl\:text-\[20px\]{
-    font-size: 20px;
   }
 }
 

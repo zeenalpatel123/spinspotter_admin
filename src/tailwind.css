@@ -72,7 +72,7 @@ input:checked + .select span{@apply text-white anim;}
   .tab_hover .tab_slot li a.active{
     color: #468F73;
   }
-/* popup tabs css end  */
+/* popup tabs css end */
 
 @tailwind components;
 @tailwind utilities;
